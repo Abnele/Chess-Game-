@@ -84,8 +84,7 @@ public class PromotionGUI extends JPanel implements Runnable, ActionListener {
     public void run()
     {
         while (running) {
-            /// Runs updating and redrawing methods
-            update();
+            /// Runs redrawing method
             repaint();
             if (!running)
             {
@@ -98,13 +97,7 @@ public class PromotionGUI extends JPanel implements Runnable, ActionListener {
 
     }
 
-    // Update method
-    private void update()
-    {
-        /// Updates GUI and whatnot idk
-
-
-    }
+    
 
     // GUI Repainter
     public void paintComponent(Graphics g)
