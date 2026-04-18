@@ -1,5 +1,5 @@
-# Chess-Game-
-Chess game program in java. It is currently in development.-
+# Chess-Game
+Chess game program in java. It is currently in development.
 
 
 How To Run:
