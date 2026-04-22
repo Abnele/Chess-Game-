@@ -508,14 +508,7 @@ public class King extends Piece{
 
         }
 
-        /** If the king is in check
-         * @And it cannot move in the squares around it
-         * @Then the king is in checkmate (it's really not, but for now it is)
-         *
-
-
-
-         */
+    
         public boolean isCheckMated()
         {
             if (isInCheck())
