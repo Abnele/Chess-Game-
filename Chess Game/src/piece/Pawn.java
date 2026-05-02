@@ -233,8 +233,10 @@ public class Pawn extends Piece {
                     // If it moved two
                     else if (targetRow == this.preRow - 2)
                     {
-                        // Update its movement variable
-                        movedTwoSquares = true;
+                        // Update its movement variable if this method is used to move a pawn
+                        if (this == Main.gamePanel.activePiece){
+                            movedTwoSquares = true;
+                        }
                         return true;
                     }
                 }
@@ -286,7 +288,9 @@ public class Pawn extends Piece {
                         else if (targetRow == this.preRow + 2 && targetColumn == preColumn)
                         {
                             // Update its movement variable
-                            movedTwoSquares = true;
+                            if (this == Main.gamePanel.activePiece){
+                                movedTwoSquares = true;
+                            }
                             return true;
                         }
                     }

@@ -54,6 +54,7 @@ public class GamePanel extends JPanel implements Runnable {
     /// Debug Pieces
     public Piece moveablePiece;
     public ArrayList<Piece> checkingPieces = new ArrayList<>();
+    public Pawn twoSquarePawn;
 
 
     /// Debug Integers
@@ -305,6 +306,7 @@ public class GamePanel extends JPanel implements Runnable {
                     {
                         if (((Pawn) piece).movedTwoSquares)
                         {
+                            twoSquarePawn = (Pawn)piece;
                             movedTwoSquares = true;
                         }
                         if (((Pawn) piece).isInPromotionSquare())
@@ -338,7 +340,7 @@ public class GamePanel extends JPanel implements Runnable {
                 }
 
                 //Shows the amount of times information is updated + Debug loops
-                System.out.print("\rUpdate Iterations: "  + updateIterations + " IsInStaleMate: "  + isInStaleMate);
+                System.out.print("\rUpdate Iterations: "  + updateIterations + " MovedTwoSquares: "  +movedTwoSquares + " by: " +twoSquarePawn);
                 updateIterations++;
 
                 // List based debug loops

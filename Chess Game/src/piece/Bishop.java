@@ -17,7 +17,8 @@ public class Bishop extends Piece {
 
     public boolean canMove(int targetColumn, int targetRow)
     {
-        checkMovedTwoSquares();
+
+
 
 
         // If the piece is within the board

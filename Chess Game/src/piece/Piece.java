@@ -650,7 +650,7 @@ public class Piece {
             /// This code resets the movedTwoSquares variable after each turn
             for (Piece piece : GamePanel.simPieces)
             {
-                if (piece instanceof Pawn && piece.color == this.color)
+                if (piece instanceof Pawn && piece.color == Main.gamePanel.currentColor)
                 {
                     if (((Pawn) piece).movedTwoSquares)
                     {
